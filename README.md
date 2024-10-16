@@ -1,36 +1,51 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Rhystack - Live deploy your Next.js app fast and cheap
+
+Rhystack is my own personal process for rapidly and cheaply building and deploying live production applications to AWS. Clone the repo and you'll be greeted with a tutorial style checklist of instructions that will result in your **live deployed** web application
+
+## Features
+
+- Built with **Next.js** and **TypeScript**
+- Styled using **Tailwind CSS**
+- Deployed to **AWS EC2** container
+- Integrated with **AWS S3** for file uploads
+- **AWS RDS** for PostgreSQL database
+- Custom domain management with **AWS Route 53**
+- Suitable for AWS **beginners**
+
+## Prerequisites
+
+Before you begin, ensure you have met the following requirements:
+
+- Node.js (>= 14.x)
 
 ## Getting Started
 
-First, run the development server:
+Follow the instructions below to clone the repository, install dependencies, and start the development server.
+
+### Clone the Repository
+
+```bash
+git clone git@github.com:RhysPtyLtd/Rhystack.git
+cd Rhystack
+```
+
+### Install Dependencies
+
+```bash
+npm install
+```
+
+### Run the Development Server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) with your browser and follow the checklist.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
+## Bonus resources
 
 To learn more about Next.js, take a look at the following resources:
 
 - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
