@@ -2,6 +2,7 @@
 
 import { useState, ReactNode } from "react";
 import { FiChevronDown, FiChevronUp } from "react-icons/fi";
+import ExternalLink from "./components/ExternalLink";
 
 type TaskItem = {
   id: number;
@@ -22,9 +23,15 @@ export default function HomePage() {
     },
     {
       id: 2,
-      content: "Step 2: Initialize Git",
+      content: (
+        <div>
+          Create or sign in to your{" "}
+          <ExternalLink href="https://aws.amazon.com/">
+            AWS account
+          </ExternalLink>
+        </div>
+      ),
       completed: false,
-      steps: ["Install Git", "Initialize a new repository", "Create a commit"],
       hasCheckbox: true,
     },
     {
